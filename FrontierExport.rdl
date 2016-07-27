@@ -151,7 +151,7 @@
 + SPACE(10)
 + SPACE(10)
 + left(Fields!cost_centre.Value + "          ",10)
-+ SPACE(2)</Value>
++ "0" + Sum(Fields!weekend_count.Value).ToString</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -321,10 +321,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="RosterOn">
-      <ConnectionProperties>
-        <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=MEL-LHN0D162;Initial Catalog=BallaratHealthTest</ConnectString>
-      </ConnectionProperties>
+      <DataSourceReference>BHSTestLocal</DataSourceReference>
       <rd:SecurityType>DataBase</rd:SecurityType>
       <rd:DataSourceID>de97eb53-2ebb-487c-91e9-4d8995be1639</rd:DataSourceID>
     </DataSource>
